@@ -5,18 +5,22 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
-    /* Corrigido: Vercel só aceita node/node16/nodenext/classic */
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
+    /* Corrigido pra Vercel e React */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    /* Ignora warnings de variáveis não usadas */
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+    /* Mantém linting e tipo estrito */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
