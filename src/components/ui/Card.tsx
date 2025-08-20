@@ -2,10 +2,10 @@ import { ReactNode } from 'react'
 
 interface CardProps {
   title?: string
-  children?: ReactNode       // <- OPCIONAL para Dashboard
+  children?: ReactNode       // <- OPCIONAL
   className?: string
   value?: string | number
-  onClick?: () => void       // <- OPCIONAL para CandidateCard / JobCard
+  onClick?: () => void       // <- OPCIONAL
 }
 
 const Card = ({ title, children, className = '', value, onClick }: CardProps) => {
