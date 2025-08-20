@@ -2,10 +2,10 @@ import { ReactNode } from 'react'
 
 interface CardProps {
   title?: string
-  children: ReactNode
+  children?: ReactNode       // <- OPCIONAL
   className?: string
   value?: string | number
-  onClick?: () => void        // <- ADICIONADO
+  onClick?: () => void       // <- ADICIONADO
 }
 
 const Card = ({ title, children, className = '', value, onClick }: CardProps) => {
